@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<script>
+			var conn;
+			conn = new WebSocket("ws://localhost:8080/ws")
+			conn.onopen = () => {
+				console.log("openn....")
+			}
+			conn.onclose = () => {
+				console.log("close....")
+			}
+			conn.onmessage = (e) => {
+				console.log(e)
+			}
+		</script>
+	</body>
+</html>
+
